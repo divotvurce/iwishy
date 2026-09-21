@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IWISHY - Dárek, který udělá radost</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Ikony -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="IWISHY Logo" class="logo-icon">
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#jak-to-funguje">Jak to funguje</a>
+                <a href="#inspirace">Inspirace</a>
+                <a href="#cenik">Ceník</a>
+                <a href="#faq">FAQ</a>
+                <a href="#prihlaseni">Přihlášení</a>
+            </nav>
+
+            <a href="#vytvorit" class="btn btn-primary">Vytvořit wishlist</a>
+
+            <button class="mobile-toggle" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Dárek, který udělá <span class="highlight">radost</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Vytvořte wishlist a sdílejte ho s rodinou a přáteli během pár sekund.
+                </p>
+                <a href="#" class="btn btn-primary" style="padding: 16px 36px; font-size: 16px;">
+                    Vytvořte svůj wishlist
+                </a>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="SVATBA.jpg" alt="Svatební pár" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="inspiration" id="inspirace">
+        <div class="container inspiration-grid">
+            <div>
+                <h2 class="section-heading-sm">
+                    Pro každou <br><span class="highlight">výjimečnou</span><br> chvíli
+                </h2>
+                <a href="#" class="link-with-arrow">
+                    Objevte všechny příležitosti
+                    <span class="arrow-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="carousel-container">
+                <div class="inspiration-card">
+                    <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Svatby">
+                    <div class="inspiration-card-overlay">
+                        <div class="inspiration-card-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="inspiration-card-title">Svatby</div>
+                    </div>
+                </div>
+
+                <div class="inspiration-card">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80" alt="Narozeniny">
+                    <div class="inspiration-card-overlay">
+                        <div class="inspiration-card-icon"><i class="fa-solid fa-gift"></i></div>
+                        <div class="inspiration-card-title">Narozeniny</div>
+                    </div>
+                </div>
+
+                <div class="inspiration-card">
+                    <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&w=600&q=80" alt="Baby shower">
+                    <div class="inspiration-card-overlay">
+                        <div class="inspiration-card-icon"><i class="fa-solid fa-baby"></i></div>
+                        <div class="inspiration-card-title">Baby shower</div>
+                    </div>
+                </div>
+
+                <div class="inspiration-card">
+                    <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=600&q=80" alt="Vánoce">
+                    <div class="inspiration-card-overlay">
+                        <div class="inspiration-card-icon"><i class="fa-solid fa-tree"></i></div>
+                        <div class="inspiration-card-title">Vánoce</div>
+                    </div>
+                </div>
+
+                <div class="inspiration-card">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Rozlučky">
+                    <div class="inspiration-card-overlay">
+                        <div class="inspiration-card-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div class="inspiration-card-title">Rozlučky</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="how-it-works" id="jak-to-funguje">
+    <div class="container how-grid">
+        <div class="how-text">
+            <span class="section-tag">JAK TO FUNGUJE</span>
+            <h2 class="how-title">
+                Jednoduché pro vás i vaše hosty
+            </h2>
+
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number-badge">1</div>
+                    <div class="step-content">
+                        <h4><i class="fa-solid fa-gift"></i> Vytvořte událost a seznam přání</h4>
+                        <p>Přidejte dárky, zážitky nebo finanční příspěvky.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number-badge">2</div>
+                    <div class="step-content">
+                        <h4><i class="fa-solid fa-qrcode"></i> Sdílejte pozvánku přes odkaz nebo QR kód</h4>
+                        <p>Pošlete hostům odkaz, nebo vytiskněte QR kód.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number-badge">3</div>
+                    <div class="step-content">
+                        <h4><i class="fa-solid fa-users"></i> Hosté si vyberou a přispějí</h4>
+                        <p>Přispějí na to, co vám udělá radost.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number-badge">4</div>
+                    <div class="step-content">
+                        <h4><i class="fa-solid fa-circle-check"></i> Užijte si společnou radost z dárku</h4>
+                        <p>Žádné duplicity, jen radost z každého příspěvku.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="video-btn">
+                <span class="video-play-icon"><i class="fa-solid fa-play"></i></span>
+                Podívejte se, jak to funguje
+            </a>
+        </div>
+
+        <!-- Náhrada CSS telefonu za jednoduchý responzivní obrázek -->
+        <div class="mockup-preview-area">
+            <img src="dummy.png" alt="Ukázka aplikace IWISHY" class="mockup-img">
+        </div>
+    </div>
+</section>
+
+    <section class="why-iwishy">
+        <div class="container">
+            <h2 style="font-size: 36px; font-weight: 800;">Proč IWISHY?</h2>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i class="fa-solid fa-qrcode"></i></div>
+                    <h4>QR Kód během pár vteřin</h4>
+                    <p>Sdílejte svou událost okamžitě pomocí QR kódu.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i class="fa-solid fa-gift"></i></div>
+                    <h4>Dárky, co si opravdu přejete</h4>
+                    <p>Vytvořte wishlist a vybírejte dárky, které mají smysl.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h4>Vy ani hosté nemusíte nic instalovat</h4>
+                    <p>Vše funguje přímo v prohlížeči na telefonu i počítači.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i class="fa-solid fa-hand-pointer"></i></div>
+                    <h4>Příspěvek na pár kliků</h4>
+                    <p>Hosté přispějí snadno, rychle a bezpečně online.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-box"><i class="fa-solid fa-heart"></i></div>
+                    <h4>Bez reklam a s důvěrou</h4>
+                    <p>Čisté prostředí bez rušivých reklam a spamu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="cenik">
+        <div class="container">
+            <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 8px;">Iwishy pro každou událost</h2>
+
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-header-icon"><i class="fa-solid fa-gift"></i></div>
+                        <div class="plan-title">Starter</div>
+                        <div class="plan-guests">Počet hostů: 15</div>
+                        <div class="plan-price">199 Kč <span>/ událost</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 3 přání</li>
+                        <li><i class="fa-solid fa-check"></i> QR platby</li>
+                        <li><i class="fa-solid fa-check"></i> Základní statistiky</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Vybrat plán</a>
+                </div>
+
+                <!-- Plan 2 Featured -->
+                <div class="pricing-card featured">
+                    <span class="popular-badge">Nejoblíbenější</span>
+                    <div class="plan-header">
+                        <div class="plan-header-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <div class="plan-title">Celebration</div>
+                        <div class="plan-guests">Počet hostů: 30</div>
+                        <div class="plan-price">399 Kč <span>/ událost</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Neomezený počet přání</li>
+                        <li><i class="fa-solid fa-check"></i> QR kód a sdílení</li>
+                        <li><i class="fa-solid fa-check"></i> Základní statistiky</li>
+                        <li><i class="fa-solid fa-check"></i> Prioritní podpora</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Vybrat plán</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <div class="plan-header-icon"><i class="fa-solid fa-crown"></i></div>
+                        <div class="plan-title">Unlimited</div>
+                        <div class="plan-guests">Počet hostů: neomezeně</div>
+                        <div class="plan-price">599 Kč <span>/ událost</span></div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Neomezený počet přání</li>
+                        <li><i class="fa-solid fa-check"></i> QR kód a sdílení</li>
+                        <li><i class="fa-solid fa-check"></i> Základní statistiky</li>
+                        <li><i class="fa-solid fa-check"></i> Prioritní podpora</li>
+                        <li><i class="fa-solid fa-check"></i> Vlastní motiv události</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Vybrat plán</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 style="font-size: 36px; font-weight: 800; text-align: center;">Často kladené otázky</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Jak to celé funguje?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Založíte si událost, přidáte seznam přání nebo finančních příspěvků a vygenerovaný odkaz či QR kód posíláte hostům.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Mohu změnit/smazat přání?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Kdykoliv v administraci můžete dárky upravovat, mazat nebo přidávat nové.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Musí si hosté něco instalovat?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Vůbec ne! Stránka funguje okamžitě v jakémkoliv mobilním nebo desktopovém prohlížeči.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Na jaké události mohu použít IWISHY?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Na svatby, narozeniny, baby showery, rozlučky se svobodou, Vánoce i kolaudace.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Jak mohu sdílet událost?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Můžete zkopírovat přímý odkaz do zprávy nebo stáhnout QR kód a vytisknout ho např. na svatební oznámení.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Kdy mohu vytvořit událost?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Kdykoliv! Vytvoření zabere jen pár minut a je okamžitě aktivní.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Přestaňte řešit dárky složitě.</h2>
+                    <p>Vytvořte si svůj první wishlist a užijte si radost z dárků, které mají smysl.</p>
+                </div>
+                <a href="#" class="btn cta-btn">
+                    Vytvořte si svůj wishlist <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                       <img src="logo.png" alt="IWISHY Logo" class="logo-icon">
+                    </a>
+                    <p>Pomáháme lidem plnit přání a zjednodušovat darování dárků pro všechny příležitosti.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Produkt</h5>
+                    <ul>
+                        <li><a href="#">Funkce</a></li>
+                        <li><a href="#">Pro koho</a></li>
+                        <li><a href="#">Ceník</a></li>
+                        <li><a href="#">Novinky</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Podpora</h5>
+                    <ul>
+                        <li><a href="#">Nápověda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Právní</h5>
+                    <ul>
+                        <li><a href="#">Obchodní podmínky</a></li>
+                        <li><a href="#">Ochrana údajů</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>Buďte v obraze</h5>
+                    <p style="font-size:13px; color:var(--text-gray); margin-top:0;">Novinky, tipy a inspirace přímo do emailu.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Váš e-mail">
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2025 IWISHY. Všechna práva vyhrazena.
+            </div>
+        </div>
+    </footer>
+
+<script src="main.js"></script>
+</body>
+</html>
